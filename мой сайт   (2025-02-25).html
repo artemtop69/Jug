@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>топ 10 пельменей</title>
+   git clone git@github.com:artemtop69/Slal.git
+</head>
+<body>
+    <h1>все пельмени лучшие! </h1>
+    <p>а ты ожидал другой ответ? </p>
+    <button id="inputButton">Введите  комент автору</button>
+
+    <script>
+        // Получаем кнопку по её ID
+        const button = document.getElementById("inputButton");
+
+        // Добавляем обработчик события для кнопки
+        button.onclick = function() {
+            // Вызываем prompt для ввода текста
+            const userInput = prompt("Введите ваш текст:");
+
+            // Проверяем, был ли введен текст
+            if (userInput !== null) { // Проверяем, была ли нажата "Отмена"
+                console.log(userInput); // Выводим введенный текст в консоль
+            } else {
+                console.log("Пользователь отменил ввод."); // Выводим сообщение, если пользователь отменил ввод
+            }
+        };
+    </script>
+        
+    
+</body>
+</html>
