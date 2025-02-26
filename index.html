@@ -20,14 +20,16 @@
             const userInput = prompt("Введите ваш текст:");
 
             // Проверяем, был ли введен текст
-            if (userInput !== null) { // Проверяем, была ли нажата "Отмена"
-                console.log(userInput); // Выводим введенный текст в консоль
+            if (userInput === null) {
+                console.log("Пользователь отменил ввод.");
+            } else if (userInput.trim() === "") {
+                console.log("Ошибка: введена пустая строка.");
             } else {
-                console.log("Пользователь отменил ввод."); // Выводим сообщение, если пользователь отменил ввод
+                console.log(userInput); // Выводим введенный текст в консоль
             }
         };
     </script>
-        
-    
+
+
 </body>
 </html>
